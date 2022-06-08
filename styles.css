@@ -14,12 +14,17 @@ a.button {
     appearance: button;
     text-decoration: none;
     color: initial;
-    border: solid black 2px;
     border-radius: 8px;
-    padding: 2px;
+    padding: 20px;
+    transition: 0.5s;
+    font-size: larger;
 }
 
 a:hover {
     background-color: red;
     color: white;
+}
+
+.topic-h1 {
+    text-align: center;
 }
