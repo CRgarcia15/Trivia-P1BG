@@ -1,6 +1,9 @@
 body {
     background-color: lightgrey;
-    border: solid black 3px;
+}
+
+.index-main {
+    border: solid 3px black;
     border-radius: 10px;
 }
 
@@ -27,4 +30,24 @@ a:hover {
 
 .topic-h1 {
     text-align: center;
+}
+
+#topic-container {
+    max-width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+  }
+
+#topic {
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
 }
