@@ -34,23 +34,28 @@ a:hover {
 
 #topic-container {
     max-width: 100%;
-    background-color: plum;
+    background-color: burlywood;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
     display: grid;
     grid-template-columns: repeat(2, auto);
     margin: 20px 0;
+    text-align: center;
   }
 
-#topic {
+.topic {
     border: none;
     border-radius: 5px;
-    background-color: lightgray;
-    color: royalblue;
+    background-color: lightblue;
+    color: purple;
     padding: 10px;
     transition: 0.5s;
-    text-align: center;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
 }
 
 #topic:hover {
