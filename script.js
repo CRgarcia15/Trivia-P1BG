@@ -1,9 +1,15 @@
-/* make each topic into a button 
-href to the questions page 
-use an event listener for click and create a function for each one 
-so that the correct questions are displayed and the add it to the event listener
+/* 
+make all the button got to one page where the questions will be displayed
+create all the 10 questtions and make them into an array
+create the 'next' and go back to topic page button.
 */
 
+/* IF YOU GOT TIME
+create a points counter system
+each question is worth 100 points
+make last 3 questions hard so that they are worth 500 points
+
+*/
 function topicCars () {
     console.log('hi')
 }
@@ -44,3 +50,14 @@ function topicRandomFacts () {
     console.log('random fact')
 }
 
+const carQuestions = [
+    {
+        question: 'is the 2JZ the best engine ever?',
+        answers: [
+            {text: 'is that even a question', correct: true},
+            {text: 'of cuorse', correct: true},
+            {text: 'no, its the RB26', correct: false},
+            {text: "I don't know what a 2JZ is", correct: false}
+        ]
+    }
+]
