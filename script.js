@@ -11,43 +11,43 @@ make last 3 questions hard so that they are worth 500 points
 
 */
 function topicCars () {
-    console.log('hi')
+    location.href= "question.html"
 }
 
 function topicBasketball () {
-    console.log('I')
+    location.href= "question.html"
 }
 
 function topicCoding () {
-    console.log('am')
+    location.href= "question.html"
 }
 
 function topicMovies () {
-    console.log('working')
+    location.href= "question.html"
 }
 
 function topicInternet () {
-    console.log('internet')
+    location.href= "question.html"
 }
 
 function topicSportHistory () {
-    console.log('Jordan the goat')
+    location.href= "question.html"
 }
 
 function topicFood () {
-    console.log('rice')
+    location.href= "question.html"
 }
 
 function topicCountries () {
-    console.log('DR')
+    location.href= "question.html"
 }
 
 function topicAnimals () {
-    console.log('dog')
+    location.href= "question.html"
 }
 
 function topicRandomFacts () {
-    console.log('random fact')
+    location.href= "question.html"
 }
 
 const carQuestions = [
