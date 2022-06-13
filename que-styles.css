@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 8px;
+}
+
+.container {
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 8px;
+}
+
+#question {
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#answer1 {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,15 +1,36 @@
-/* 
-make all the button got to one page where the questions will be displayed
-create all the 10 questtions and make them into an array
-create the 'next' and go back to topic page button.
-*/
-
 /* IF YOU GOT TIME
 create a points counter system
 each question is worth 100 points
 make last 3 questions hard so that they are worth 500 points
-
+add a timer
 */
+
+/* 
+see if by making a function that handels if answer is false
+then make the background color of the button red if correct then
+make it green and adding it to each function works.
+
+function that handels once the next button for the questions
+
+create all the 10 questtions and make them into an array
+
+function that once in the last question add a return to topic page button
+
+perhaps use the --hue var for the color but it might be better to use 
+.styles(background-color: color)
+
+make the html pages look good on styles.css 
+
+update and complete the readme page
+*/
+function nextQuestion () {
+
+}
+
+function selectAnswer () {
+
+}
+
 function topicCars () {
     location.href= "question.html"
 }
