@@ -1,16 +1,23 @@
+body {
+    background-color: lightgrey;
+}
+
 h1 {
+    background-color: white;
     text-align: center;
     border: solid 3px black;
     border-radius: 8px;
 }
 
 .container {
+    background-color: white;
     text-align: center;
     border: solid 3px black;
     border-radius: 8px;
 }
 
 #question {
+    background-color: white;
     border: solid 2px black;
     border-radius: 10px;
     margin-top: 20px;
@@ -22,4 +29,10 @@ h1 {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+#answer1:hover {
+    background-color: white;
+    color: red;
 }
