@@ -36,3 +36,31 @@ h1 {
     background-color: white;
     color: red;
 }
+
+#next {
+    background-color: beige;
+    color: blue;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#next:hover {
+    background-color: pink;
+    color: black;
+}
+
+#return {
+    background-color: beige;
+    color: blue;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#return:hover {
+    background-color: pink;
+    color: black;
+}
