@@ -32,20 +32,27 @@ next question button function
 return to topics page button function
 add those functions to each function for the buttons
 */
-function returnTopic () {
+let questionDisplay = document.getElementById('que')
+
+function returnToTopic () {
     location.href = "topic-choice.html"
 }
 
-function nextQuestion () {
-
+function nextQuestion (question) {
+    let i = 0 
+    while(i < question.length) {
+        i++
+        //add a way to display the questions
+    }
 }
 
 function selectAnswer () {
-
+    
 }
 
 function topicCars () {
     location.href= "question.html"
+    //add nextQuestion here
 }
 
 function topicBasketball () {
