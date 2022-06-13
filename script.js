@@ -23,6 +23,16 @@ make the html pages look good on styles.css
 
 update and complete the readme page
 */
+
+/* 
+THINGS TO GET DONE NOW
+CREATE:
+question display function
+answer select function
+next question button function
+return to topics page button function
+add those functions to each function for the buttons
+*/
 function nextQuestion () {
 
 }
