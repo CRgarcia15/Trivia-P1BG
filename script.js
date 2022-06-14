@@ -32,7 +32,20 @@ next question button function
 return to topics page button function
 add those functions to each function for the buttons
 */
-let questionDisplay = document.getElementById('que')
+let questionDisplay = document.getElementById("question-container")
+
+
+//beginning of trying to fix the issue, uses log to check for the problem
+if(questionDisplay == null){
+    console.log("not working")
+}
+
+else {console.log('working')}
+//ending
+
+
+
+
 
 function returnToTopic () {
     location.href = "topic-choice.html"
@@ -42,8 +55,9 @@ function nextQuestion (question) {
     let i = 0 
     while(i < question.length) {
         i++
-        //add a way to display the questions
+       questionDisplay.innerText = question[i]
     }
+  
 }
 
 function selectAnswer () {
@@ -52,7 +66,7 @@ function selectAnswer () {
 
 function topicCars () {
     location.href= "question.html"
-    //add nextQuestion here
+   //nextQuestion(carQuestions)
 }
 
 function topicBasketball () {
