@@ -35,19 +35,48 @@ return to topics page button function
 add those functions to each function for the buttons
 */
 let questionDisplay = document.getElementById("question-container")
-
 let currentQuestionIndex = 0
 
 let questions
 
 
+//remove the question
+let questionContainer = document.getElementById('question-container')
+questionContainer.style.display = 'none'
+
+let questionHeader = document.getElementById('question-header')
+questionHeader.style.display = 'none'
+
+
+//this handels when a topic button is clicked it removes the topic divs and shows the question div
+let topicContainer = document.getElementById('topic-container')
+topicContainer.addEventListener('click', (event) => {
+    const isBtn = event.target.nodeName === 'BUTTON'
+    if (isBtn) {
+        topicContainer.style.display = 'none'
+        questionContainer.style.display = 'block'
+        questionHeader.style.display = 'block'
+    }
+})
+
+let moreTopics = document.getElementById('return')
+moreTopics.addEventListener('click', (event) => {
+    const isBtn = event.target.nodeName === 'BUTTON'
+    if (isBtn) {
+        topicContainer.style.display = 'block'
+        questionContainer.style.display = 'none'
+        questionHeader.style.display = 'none'
+    }
+})
+
+
+
+
+
+
 //show question and answer functions
 function showQuestion (question) {
     questionDisplay.innerHTML = question.question
-}
-
-function returnToTopic () {
-    location.href = "topic-choice.html"
 }
 
 function nextQuestion (question) {
@@ -58,8 +87,13 @@ function selectAnswer () {
     //selects the answer and checks for right and wrong answers
 }
 
+
+
+
+
+
 // topic functions
-function topicCars () {
+function topicCars() {
     questions = carQuestions
 }
 
@@ -69,6 +103,7 @@ function topicBasketball () {
 
 function topicCoding () {
     location.href= "question.html"
+
 }
 
 function topicMovies () {
