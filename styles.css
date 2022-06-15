@@ -64,3 +64,65 @@ a:hover {
     background-color: red;
     color:aliceblue;
 }
+.question-header {
+    background-color: white;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 8px;
+}
+
+.container {
+    background-color: white;
+    text-align: center;
+    border: solid 3px black;
+    border-radius: 8px;
+}
+
+#questions {
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+#answer1, #answer2, #answer3, #answer4 {
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover {
+    background-color: white;
+    color: red;
+}
+
+#next {
+    background-color: beige;
+    color: blue;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#next:hover {
+    background-color: hotpink;
+    color: black;
+}
+
+#return {
+    background-color: beige;
+    color: blue;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+#return:hover {
+    background-color: pink;
+    color: black;
+}
