@@ -1,4 +1,4 @@
-import { carQuestions } from "./questions.js"
+import * as myQuestions from "./questions.js"
 
 /* IF YOU GOT TIME
 create a points counter system
@@ -33,7 +33,6 @@ questionContainer.style.display = 'none'
 let questionHeader = document.getElementById('question-header')
 questionHeader.style.display = 'none'
 
-
 //this handels when a topic button is clicked it removes the topic divs and shows the question div
 let topicContainer = document.getElementById('topic-container')
 topicContainer.addEventListener('click', (event) => {
@@ -58,9 +57,9 @@ moreTopics.addEventListener('click', (event) => {
 
 //calling all the question displays 
 let questionDisplay = document.getElementById("question-container")
+let carQuestions = myQuestions.carQuestions
 
-
-
+console.log(carQuestions)
 
 //show question and answer functions
 function showQuestion (question) {
