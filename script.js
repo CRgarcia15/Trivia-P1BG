@@ -26,23 +26,7 @@ make the html pages look good on styles.css
 update and complete the readme page
 */
 
-/* 
-THINGS TO GET DONE NOW
-CREATE:
-answer select function
-next question button function
-return to topics page button function
-add those functions to each function for the buttons
-*/
-let questionDisplay = document.getElementById("question-container")
-let currentQuestionIndex = 0
-
-let questions
-
-
-
-
-//remove the question
+//removes the question container so that only the topics are shown
 let questionContainer = document.getElementById('question-container')
 questionContainer.style.display = 'none'
 
@@ -61,6 +45,7 @@ topicContainer.addEventListener('click', (event) => {
     }
 })
 
+//When "More Topics" button is clicked the questions are removed and topics are shown again
 let moreTopics = document.getElementById('return')
 moreTopics.addEventListener('click', (event) => {
     const isBtn = event.target.nodeName === 'BUTTON'
@@ -71,7 +56,8 @@ moreTopics.addEventListener('click', (event) => {
     }
 })
 
-
+//calling all the question displays 
+let questionDisplay = document.getElementById("question-container")
 
 
 
@@ -93,10 +79,10 @@ function selectAnswer () {
 
 
 
-
 // topic functions
 function topicCars() {
     questions = carQuestions
+    showQuestion(questions[0])
 }
 
 function topicBasketball () {
@@ -135,6 +121,3 @@ function topicAnimals () {
 function topicRandomFacts () {
     location.href= "question.html"
 }
-
-
-showQuestion(questions[0])
