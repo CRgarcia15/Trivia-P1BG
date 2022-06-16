@@ -120,3 +120,8 @@ function topicAnimals () {
 function topicRandomFacts () {
     location.href= "question.html"
 }
+
+
+// This is a comment, hi
+
+//now is not up to date 
