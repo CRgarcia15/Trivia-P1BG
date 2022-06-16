@@ -94,4 +94,4 @@ export const carQuestions = [
     },
 ]
 
-// make all the questions and answer here
+// make all the questions and answers here

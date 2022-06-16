@@ -46,7 +46,7 @@ a:hover {
     text-align: center;
   }
 
-.topic-1 {
+#cars {
     border: none;
     border-radius: 5px;
     background-color: lightblue;
@@ -60,7 +60,7 @@ a:hover {
     color: initial;
 }
 
-#topic:hover {
+#cars:hover {
     background-color: red;
     color:aliceblue;
 }

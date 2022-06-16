@@ -40,6 +40,8 @@ let currentQuestionIndex = 0
 let questions
 
 
+
+
 //remove the question
 let questionContainer = document.getElementById('question-container')
 questionContainer.style.display = 'none'
@@ -63,7 +65,7 @@ let moreTopics = document.getElementById('return')
 moreTopics.addEventListener('click', (event) => {
     const isBtn = event.target.nodeName === 'BUTTON'
     if (isBtn) {
-        topicContainer.style.display = 'block'
+        topicContainer.style.display = 'grid'
         questionContainer.style.display = 'none'
         questionHeader.style.display = 'none'
     }
