@@ -33,33 +33,40 @@ questionContainer.style.display = 'none'
 let questionHeader = document.getElementById('question-header')
 questionHeader.style.display = 'none'
 
+//selects topic header for html
+let topicHeader = document.getElementById('topic-h1')
+
+
 //this handels when a topic button is clicked it removes the topic divs and shows the question div
-let topicContainer = document.getElementById('topic-container')
+function removeQuestionContainer () {
 topicContainer.addEventListener('click', (event) => {
     const isBtn = event.target.nodeName === 'BUTTON'
     if (isBtn) {
+        topicHeader.style.display = 'none'
         topicContainer.style.display = 'none'
         questionContainer.style.display = 'block'
         questionHeader.style.display = 'block'
     }
 })
-
+}
 //When "More Topics" button is clicked the questions are removed and topics are shown again
 let moreTopics = document.getElementById('return')
 moreTopics.addEventListener('click', (event) => {
     const isBtn = event.target.nodeName === 'BUTTON'
     if (isBtn) {
+        topicHeader.style.display = 'block'
         topicContainer.style.display = 'grid'
         questionContainer.style.display = 'none'
         questionHeader.style.display = 'none'
     }
 })
 
-//calling all the question displays 
-let questionDisplay = document.getElementById("question-container")
-let carQuestions = myQuestions.carQuestions
+//calling all questions form question.js
+let carQuestionsArr = myQuestions.carQuestions
 
-console.log(carQuestions)
+//calling the h2 tag to display questions
+let questionDisplay = document.getElementById("question-container")
+
 
 //show question and answer functions
 function showQuestion (question) {
@@ -80,8 +87,8 @@ function selectAnswer () {
 
 // topic functions
 function topicCars() {
-    questions = carQuestions
-    showQuestion(questions[0])
+    //removeQuestionContainer()
+    console.log("hello")
 }
 
 function topicBasketball () {
@@ -120,8 +127,3 @@ function topicAnimals () {
 function topicRandomFacts () {
     location.href= "question.html"
 }
-
-
-// This is a comment, hi
-
-//now is not up to date 
