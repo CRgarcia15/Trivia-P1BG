@@ -26,51 +26,15 @@ make the html pages look good on styles.css
 update and complete the readme page
 */
 
-//removes the question container so that only the topics are shown
-let questionContainer = document.getElementById('question-container')
-questionContainer.style.display = 'none'
-
-let questionHeader = document.getElementById('question-header')
-questionHeader.style.display = 'none'
-
-//selects topic header for html
-let topicHeader = document.getElementById('topic-h1')
-
-
-//this handels when a topic button is clicked it removes the topic divs and shows the question div
-function removeQuestionContainer () {
-topicContainer.addEventListener('click', (event) => {
-    const isBtn = event.target.nodeName === 'BUTTON'
-    if (isBtn) {
-        topicHeader.style.display = 'none'
-        topicContainer.style.display = 'none'
-        questionContainer.style.display = 'block'
-        questionHeader.style.display = 'block'
-    }
-})
-}
-//When "More Topics" button is clicked the questions are removed and topics are shown again
-let moreTopics = document.getElementById('return')
-moreTopics.addEventListener('click', (event) => {
-    const isBtn = event.target.nodeName === 'BUTTON'
-    if (isBtn) {
-        topicHeader.style.display = 'block'
-        topicContainer.style.display = 'grid'
-        questionContainer.style.display = 'none'
-        questionHeader.style.display = 'none'
-    }
-})
-
 //calling all questions form question.js
 let carQuestionsArr = myQuestions.carQuestions
 
 //calling the h2 tag to display questions
 let questionDisplay = document.getElementById("question-container")
 
-
 //show question and answer functions
 function showQuestion (question) {
-    questionDisplay.innerHTML = question.question
+   // questionDisplay.innerHTML = question.question
 }
 
 function nextQuestion (question) {
@@ -81,18 +45,15 @@ function selectAnswer () {
     //selects the answer and checks for right and wrong answers
 }
 
-
-
-
-
 // topic functions
+
 function topicCars() {
     //removeQuestionContainer()
     console.log("hello")
 }
 
 function topicBasketball () {
-    questions = basketBallQuestions
+   
 }
 
 function topicCoding () {
@@ -127,3 +88,38 @@ function topicAnimals () {
 function topicRandomFacts () {
     location.href= "question.html"
 }
+
+//removes the question container so that only the topics are shown
+let questionContainer = document.getElementById('question-container')
+questionContainer.style.display = 'none'
+
+let questionHeader = document.getElementById('question-header')
+questionHeader.style.display = 'none'
+
+//selects topic header for html
+let topicHeader = document.getElementById('topic-h1')
+
+
+//this handels when a topic button is clicked it removes the topic divs and shows the question div
+function removeQuestionContainer () {
+topicContainer.addEventListener('click', (event) => {
+    const isBtn = event.target.nodeName === 'BUTTON'
+    if (isBtn) {
+        topicHeader.style.display = 'none'
+        topicContainer.style.display = 'none'
+        questionContainer.style.display = 'block'
+        questionHeader.style.display = 'block'
+    }
+})
+}
+//When "More Topics" button is clicked the questions are removed and topics are shown again
+let moreTopics = document.getElementById('return')
+moreTopics.addEventListener('click', (event) => {
+    const isBtn = event.target.nodeName === 'BUTTON'
+    if (isBtn) {
+        topicHeader.style.display = 'block'
+        topicContainer.style.display = 'grid'
+        questionContainer.style.display = 'none'
+        questionHeader.style.display = 'none'
+    }
+})
