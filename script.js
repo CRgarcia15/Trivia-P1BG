@@ -17,6 +17,7 @@ update and complete the readme page
 
 //calling all questions form question.js
 let questions
+let questionIndexCounter = -1
 
  document.getElementById('cars').addEventListener('click', handleClick)
 // topic button functions
@@ -36,8 +37,7 @@ function handleClick(e) {
         default:
             break;
     }
-
-    console.log(questions)
+    console.log(questionIndexCounter)
 }
 
 //gets question display container and hides it 
@@ -48,7 +48,7 @@ questionDisplayContainer.style.display = 'none'
 let topicChoiceDisplayContainer = document.getElementById('topicChoice-container')
 
 //gets and adds event listener to the next and more topics buttons
-document.getElementById('next').addEventListener('click', nextQuestion)
+let nextBtn = document.getElementById('next').addEventListener('click', nextQuestion)
 document.getElementById('return').addEventListener('click', returnToTopics )
 
 // when a topic is choosen this hides the topics container and shows the question container
@@ -63,17 +63,23 @@ function returnToTopics () {
     questionDisplayContainer.style.display = 'none'
 }
 
-function nextQuestion (question) {
-    //adds 1 to the question index
+//adds one to the question index so that next question is shown
+function nextQuestion () {
+    questionIndexCounter++
 }
 
+function nextBtnVisability () {
+    if (questionIndexCounter <= 10) {
+        questionIndexCounter = -1 
+        nextBtn.style.display = 'none'
+    }
+}
 //calling the h2 tag to display questions
 let questionDisplay = document.getElementById("question-container")
 
 //show question and answer functions
 function showQuestion (e) {
-    questions[0]
-   questionDisplay.innerHTML = question
+   questionDisplay.innerHTML = e.questions
 }
 
 function selectAnswer () {
