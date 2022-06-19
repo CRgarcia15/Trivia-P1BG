@@ -16,98 +16,67 @@ update and complete the readme page
 */
 
 //calling all questions form question.js
-let carQuestionsArr = myQuestions.carQuestions
+let questions
 
-//calling the h2 tag to display questions
-let questionDisplay = document.getElementById("question-container")
+ document.getElementById('cars').addEventListener('click', handleClick)
+// topic button functions
+function handleClick(e) {
 
-//show question and answer functions
-function showQuestion (question) {
-   // questionDisplay.innerHTML = question.question
+    switch(e.srcElement.id)
+    {
+        case "cars":
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
+            break;
+
+        case "basketball":
+            questions = myQuestions.carQuestions;
+            break;
+
+        default:
+            break;
+    }
+
+    console.log(questions)
+}
+
+//gets question display container and hides it 
+let questionDisplayContainer = document.getElementById('question-container')
+questionDisplayContainer.style.display = 'none'
+
+//gets topic choice container by id
+let topicChoiceDisplayContainer = document.getElementById('topicChoice-container')
+
+//gets and adds event listener to the next and more topics buttons
+document.getElementById('next').addEventListener('click', nextQuestion)
+document.getElementById('return').addEventListener('click', returnToTopics )
+
+// when a topic is choosen this hides the topics container and shows the question container
+function transitionToQuestions () {
+    topicChoiceDisplayContainer.style.display = 'none'
+    questionDisplayContainer.style.display = 'block'
+}
+
+//handels when more topics button is clicked 
+function returnToTopics () {
+    topicChoiceDisplayContainer.style.display = 'block'
+    questionDisplayContainer.style.display = 'none'
 }
 
 function nextQuestion (question) {
     //adds 1 to the question index
 }
 
+//calling the h2 tag to display questions
+let questionDisplay = document.getElementById("question-container")
+
+//show question and answer functions
+function showQuestion (e) {
+    questions[0]
+   questionDisplay.innerHTML = question
+}
+
 function selectAnswer () {
     //selects the answer and checks for right and wrong answers
 }
 
-let carsBtn = document.getElementById('cars').addEventListener('click', topicCars)
-// topic button functions
-function topicCars() {
-    console.log('hello')
-}
-
-function topicBasketball () {
-   
-}
-
-function topicCoding () {
-    
-
-}
-
-function topicMovies () {
- 
-}
-
-function topicInternet () {
-    
-}
-
-function topicSportHistory () {
-   
-}
-
-function topicFood () {
-  
-}
-
-function topicCountries () {
-  
-}
-
-function topicAnimals () {
-    
-}
-
-function topicRandomFacts () {
-
-}
-
-//removes the question container so that only the topics are shown
-let questionContainer = document.getElementById('question-container')
-questionContainer.style.display = 'none'
-
-let questionHeader = document.getElementById('question-header')
-questionHeader.style.display = 'none'
-
-//selects topic header for html
-let topicHeader = document.getElementById('topic-h1')
-
-
-//this handels when a topic button is clicked it removes the topic divs and shows the question div
-function removeQuestionContainer () {
-topicContainer.addEventListener('click', (event) => {
-    const isBtn = event.target.nodeName === 'BUTTON'
-    if (isBtn) {
-        topicHeader.style.display = 'none'
-        topicContainer.style.display = 'none'
-        questionContainer.style.display = 'block'
-        questionHeader.style.display = 'block'
-    }
-})
-}
-//When "More Topics" button is clicked the questions are removed and topics are shown again
-let moreTopics = document.getElementById('return')
-moreTopics.addEventListener('click', (event) => {
-    const isBtn = event.target.nodeName === 'BUTTON'
-    if (isBtn) {
-        topicHeader.style.display = 'block'
-        topicContainer.style.display = 'grid'
-        questionContainer.style.display = 'none'
-        questionHeader.style.display = 'none'
-    }
-})

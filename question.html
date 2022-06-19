@@ -8,41 +8,50 @@
     <link rel="stylesheet" href="styles.css">
 </head>
     <body>
-        <!--Topic choice page-->
-        <h1 class="topic-h1" id="topic-h1">Choose a Topic</h1>
+        <!--Topic choice container-->
+        <div id="topicChoice-container">
 
-        <!--container for the topic buttons-->
-        <div id="topic-container">
-            <button class="topic-button" id="cars" onclick="topicCars()">Cars</button>
-            <button class="topic-button" id="basketball" onclick="topicBasketball()">basketball</button>
-            <button class="topic-button" id="coding" onclick="topicCoding()">Coding</button>
-            <button class="topic-button" id="movies" onclick="topicMovies()">Movies</button>
-            <button class="topic-button" id="internet" onclick="topicInternet()">Internet</button>
-            <button class="topic-button" id="sports-history" onclick="topicSportsHistory()">Sports History</button>
-            <button class="topic-button" id="food" onclick="topicFood()">Food</button>
-            <button class="topic-button" id="countries" onclick="topicCountries()">Countries</button>
-            <button class="topic-button" id="animals" onclick="topicAnimals()">Animals</button>
-            <button class="topic-button" id="random-facts" onclick="topicRandomRacts()">Random Facts</button>
-        </div>
+            <h1 class="topic-h1" id="topic-h1">Choose a Topic</h1>
+
+            <!--container for the topic buttons-->
+            <div id="topic-container">
+                <button class="topic-button" id="cars">Cars</button>
+                <button class="topic-button" id="basketball">basketball</button>
+                <button class="topic-button" id="coding">Coding</button>
+                <button class="topic-button" id="movies">Movies</button>
+                <button class="topic-button" id="internet">Internet</button>
+                <button class="topic-button" id="sports-history">Sports History</button>
+                <button class="topic-button" id="food">Food</button>
+                <button class="topic-button" id="countries">Countries</button>
+                <button class="topic-button" id="animals">Animals</button>
+                <button class="topic-button" id="random-facts">Random Facts</button>
+            </div>
+
+         </div>
+
 
         <!--container for the questions-->
-        <div class="header">
-        <h1 class="question-header" id="question-header">Questions</h1>
-        </div>
+        <div id="question-container">
 
-        <div class="container" id="question-container">
-
-            <div id="questions">
-                <h2 id="question-container"></h2>
+            <div class="header">
+            <h1 class="question-header">Questions</h1>
             </div>
-    
-                <button id="answer1">answer 1</button>
-                <button id="answer2">answer 2</button>
-                <button id="answer3">answer 3</button>
-                <button id="answer4">answer 4</button>
-            <br>
-            <button id="next" onclick="nextQuestion()">Next</button>
-            <button id="return" onclick="returnToTopic()">More Topics</button>
+            <!--where the questions will be displayed-->
+            <div class="container" id="question-display-container">
+                <div id="questions">
+                    <h2 id="question-display"></h2>
+                </div>
+                <!--answer buttons-->
+                    <button id="answer1">answer 1</button>
+                    <button id="answer2">answer 2</button>
+                    <button id="answer3">answer 3</button>
+                    <button id="answer4">answer 4</button>
+                <br>
+                <!--next and more topic buttons-->
+                <button id="next">Next</button>
+                <button id="return">More Topics</button>
+            </div>
+
         </div>
         
         <script src="script.js" type="module"></script>
