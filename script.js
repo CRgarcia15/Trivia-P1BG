@@ -1,12 +1,4 @@
 import * as myQuestions from "./questions.js"
-
-/* IF YOU GOT TIME
-create a points counter system
-each question is worth 100 points
-make last 3 questions hard so that they are worth 500 points
-add a timer
-*/
-
 /* 
 make the html pages look good on styles.css 
 
@@ -17,6 +9,14 @@ update and complete the readme page
 let questionSelector
 let questionIndexCounter = 0
 let questionIndex = 0
+
+//adds one to the question index so that next question is shown but is only limited to 11
+function nextQuestion () {
+    if(questionIndexCounter < 11) {
+         questionIndex++
+    }
+    return console.log(questionIndex)
+ }
 
 //listening for events when buttons are clicked
  document.getElementById('cars').addEventListener('click', handleClick)
@@ -80,7 +80,8 @@ function handleClick(e) {
             break;
     } 
 
-    showQuestion(questionSelector)
+   showQuestion(questionSelector)
+   console.log(questionSelector)
 }
 
 //gets question display container and hides it 
@@ -111,7 +112,8 @@ let questionDisplay = document.getElementById("question-display")
 
 //show question and answer functions
 function showQuestion (e) {
-   questionDisplay.innerHTML = e.question //.question is what shows the question object
+   questionDisplay.innerHTML = e.question
+    //.question is what shows the qgituestion object
    //make a logic set that resets the question display so that the next question can be shown
 }
 
@@ -120,11 +122,10 @@ function selectAnswer () {
     //selects the answer and checks for right and wrong answers
 }
 
-//adds one to the question index so that next question is shown but is only limited to 11
-function nextQuestion () {
-    if(questionIndexCounter < 11) {
-         questionIndexCounter++
-    }
-    questionIndex = questionIndexCounter 
-    return console.log(questionIndex)
- }
+
+function clearDisplay () {
+    questionDisplay.innerHTML = " "
+    //make a loop so that you don't have to get out the question into the topics
+}
+ //create a function that resets the state of of the questionDisplay and buttons select answer
+ //then check to see if fixes the issue. Rewatch the YT video to get ideas
