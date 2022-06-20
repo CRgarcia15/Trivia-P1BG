@@ -92,6 +92,9 @@ export const carQuestions = [
             {text: 'Mr. T', correct: true},
         ]
     },
+    {//end message
+        question: 'Click More topics to continue playing'
+    }
 ]
 
 
