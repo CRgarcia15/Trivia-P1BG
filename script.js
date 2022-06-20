@@ -17,7 +17,7 @@ update and complete the readme page
 
 //calling all questions form question.js
 let questions
-let questionIndexCounter = -1
+let questionIndexCounter
 
  document.getElementById('cars').addEventListener('click', handleClick)
 // topic button functions
@@ -28,6 +28,7 @@ function handleClick(e) {
         case "cars":
             questions = myQuestions.carQuestions;
             transitionToQuestions()
+            questionIndexCounter = 0
             break;
 
         case "basketball":
@@ -63,17 +64,14 @@ function returnToTopics () {
     questionDisplayContainer.style.display = 'none'
 }
 
-//adds one to the question index so that next question is shown
+//adds one to the question index so that next question is shown but is only limited to 10
 function nextQuestion () {
-    questionIndexCounter++
-}
-
-function nextBtnVisability () {
-    if (questionIndexCounter <= 10) {
-        questionIndexCounter = -1 
-        nextBtn.style.display = 'none'
+    if (questionIndexCounter < 10) {
+        questionIndexCounter++
+        console.log(questionIndexCounter)
     }
 }
+
 //calling the h2 tag to display questions
 let questionDisplay = document.getElementById("question-container")
 
@@ -85,4 +83,3 @@ function showQuestion (e) {
 function selectAnswer () {
     //selects the answer and checks for right and wrong answers
 }
-
