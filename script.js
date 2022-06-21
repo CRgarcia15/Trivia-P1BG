@@ -6,7 +6,7 @@ update and complete the readme page
 */
 
 //calling all questions form question.js
-let questionSelector
+let questions
 let questionIndexCounter = 0
 let questionIndex = 0
 
@@ -15,9 +15,8 @@ function nextQuestion () {
     if(questionIndexCounter < 11) {
          questionIndexCounter++
     }
-    questionIndex = questionIndexCounter 
     clearDisplay()
-    return console.log(questionIndex)
+    showQuestion(questions[questionIndexCounter])
  }
 
 //listening for events when buttons are clicked
@@ -38,7 +37,7 @@ function handleClick(e) {
     switch(e.srcElement.id)
     {
         case "cars":
-            questionSelector = myQuestions.carQuestions[questionIndex];
+            questions = myQuestions.carQuestions;
             transitionToQuestions()
             break;
 
@@ -82,7 +81,7 @@ function handleClick(e) {
             break;
     } 
 
-   showQuestion(questionSelector)
+   showQuestion(questions[questionIndex])
    console.log(questionSelector)
 }
 
