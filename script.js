@@ -30,6 +30,11 @@ function nextQuestion () {
  document.getElementById('countries').addEventListener('click', handleClick)
  document.getElementById('animals').addEventListener('click', handleClick)
  document.getElementById('random-facts').addEventListener('click', handleClick)
+ //answer buttons 
+ let btn1 = document.getElementById('answer1').addEventListener('click', selectAnswer)
+ let btn2 = document.getElementById('answer2').addEventListener('click', selectAnswer)
+ let btn3 = document.getElementById('answer3').addEventListener('click', selectAnswer)
+ let btn4 = document.getElementById('answer4').addEventListener('click', selectAnswer)
 
 // topic button functions
 function handleClick(e) {
@@ -82,7 +87,7 @@ function handleClick(e) {
     } 
 
    showQuestion(questions[questionIndex])
-   console.log(questionSelector)
+   selectAnswer(questions[questionIndex])
 }
 
 //gets question display container and hides it 
@@ -111,22 +116,18 @@ function returnToTopics () {
 //calling the h2 tag to display questions
 let questionDisplay = document.getElementById("question-display")
 
-//show question and answer functions
+//show question function
 function showQuestion (e) {
    questionDisplay.innerHTML = e.question
-    //.question is what shows the qgituestion object
-   //make a logic set that resets the question display so that the next question can be shown
 }
 
-function selectAnswer () {
+
+function selectAnswer (e) {
+    // change the innertext of the buttons to the corresponding answers then make the if logic for the coreect of false answer
     //call the buttons and add the answers to them and make the logic for the background colors.
     //selects the answer and checks for right and wrong answers
 }
 
-
 function clearDisplay () {
     questionDisplay.innerHTML = " "
-    //make a loop so that you don't have to get out the question into the topics
 }
- //create a function that resets the state of of the questionDisplay and buttons select answer
- //then check to see if fixes the issue. Rewatch the YT video to get ideas
