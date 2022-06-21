@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    background-color: darkgrey;
 }
 
 .index-main {
@@ -11,6 +11,11 @@ body {
 #header {
     text-align: center;
     font-family: 'Schoolbell', cursive;
+    font-size: larger;
+}
+
+#index-header {
+    color: red;
 }
 
 a.button {
@@ -26,17 +31,18 @@ a.button {
 }
 
 a:hover {
-    background-color: red;
-    color: white;
+    background-color: black;
+    color: red;
 }
 
 .topic-h1 {
     text-align: center;
+    font-family: 'Schoolbell', cursive;
 }
 
 #topic-container {
     max-width: 100%;
-    background-color: burlywood;
+    background-color: ;
     border-radius: 5px;
     padding: 10px;
     box-shadow: 0 0 10px 2px;
@@ -49,27 +55,34 @@ a:hover {
 .topic-button {
     border: none;
     border-radius: 5px;
-    background-color: lightblue;
-    color: purple;
-    padding: 10px;
+    background-color: #F5F5DC;
+    color: black;
+    padding: 20px;
     transition: 0.5s;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
     border: solid black 1px;
     text-decoration: none;
-    color: initial;
+    font-family: 'Schoolbell', cursive;
+    font-size: larger;
+    margin: 2.5px;
 }
 
 .topic-button:hover {
-    background-color: red;
-    color:aliceblue;
+    background-color: #301934;
+    color:white;
 }
+
 .question-header {
-    background-color: white;
+    background-color: darkorange;
+    color: white;
     text-align: center;
     border: solid 3px black;
     border-radius: 8px;
+    font-family: 'Schoolbell', cursive;
+    font-size: xx-large;
+    padding: 10px;
 }
 
 .container {
