@@ -13,8 +13,10 @@ let questionIndex = 0
 //adds one to the question index so that next question is shown but is only limited to 11
 function nextQuestion () {
     if(questionIndexCounter < 11) {
-         questionIndex++
+         questionIndexCounter++
     }
+    questionIndex = questionIndexCounter 
+    clearDisplay()
     return console.log(questionIndex)
  }
 
