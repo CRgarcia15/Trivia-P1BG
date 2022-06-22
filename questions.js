@@ -1,25 +1,25 @@
 export const carQuestions = [
     { //1
-        question: 'Is the 2JZ the best engine ever?',
+        question: "Is the 2JZ the best engine ever?",
         answers: [
-            {text: 'Is that even a question', correct: true},
-            {text: 'Yes', correct: true},
-            {text: 'No, its the RB26', correct: false},
+            {text: "Is it a 4 cylinder", correct: false},
+            {text: "Yes!!", correct: true},
+            {text: "No, its the RB26", correct: false},
             {text: "I don't know what a 2JZ is", correct: false}
         ]
     },
     { //2
         // add picture of the car
-        question: 'With what engine did the 1969 Dodge Daytona come with?',
+        question: "With what engine did the 1969 Dodge Daytona come with?",
         answers: [
-            {text: '2JZ', correct: false},
-            {text: '5.0L Coyote', correct: false},
-            {text: '7.2L Magnum V8', correct: true},
-            {text: 'A 4 cylinder', correct: false},
+            {text: "2JZ", correct: false},
+            {text: "5.0L Coyote", correct: false},
+            {text: "7.2L Magnum V8", correct: true},
+            {text: "A 4 cylinder", correct: false},
         ]
     },
     { //3
-        question: 'What year were seatbelts required by the United States?',
+        question: "What year were seatbelts required by the United States?",
         answers: [
             {text: '1978', correct: false},
             {text: '2022', correct: false},
@@ -29,7 +29,7 @@ export const carQuestions = [
     },
     { //4
         // add picture of the car
-        question: 'When was the first car invented?',
+        question: "When was the first car invented?",
         answers: [
             {text: 'Today', correct: false},
             {text: 'Febuary 20, 1969', correct: false},
@@ -66,7 +66,7 @@ export const carQuestions = [
         ]
     },
     {//8
-        question: 'Who has won the most World Championships in F1?',
+        question: "Who has won the most World Championships in F1?",
         answers: [
             {text: 'Michael Schumacher', correct: false},
             {text: 'Lewis Hamilton', correct: true},
@@ -75,7 +75,7 @@ export const carQuestions = [
         ]
     },
     {//9
-        question: 'How much is a F1 car Worth?',
+        question: "How much is a F1 car Worth?",
         answers: [
             {text: '3 Million Dollars', correct: false},
             {text: '12 Million Dollars', correct: true},
@@ -96,6 +96,5 @@ export const carQuestions = [
         question: 'Click More topics to continue playing'
     }
 ]
-
 
 // make all the questions and answers here

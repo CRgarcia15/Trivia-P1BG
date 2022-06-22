@@ -109,34 +109,34 @@ a:hover {
 }
 
 .answer:hover {
-    background-color: white;
-    color: red;
+    background-color: black;
+    color: white;
 }
 
 #next {
-    background-color: beige;
-    color: blue;
+    background-color: darkorange;
+    color: black;
     border-radius: 10px;
     border: none;
-    padding: 10px;
+    padding: 20px;
     transition: 0.5s;
 }
 
 #next:hover {
-    background-color: hotpink;
-    color: black;
+    background-color: black;
+    color: darkorange;
 }
 
 #return {
-    background-color: beige;
-    color: blue;
+    background-color: darkorange;
+    color: black;
     border-radius: 10px;
     border: none;
-    padding: 10px;
+    padding: 20px;
     transition: 0.5s;
 }
 
 #return:hover {
-    background-color: pink;
-    color: black;
+    background-color: black;
+    color: darkorange;
 }
