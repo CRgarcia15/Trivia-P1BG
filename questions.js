@@ -2,9 +2,9 @@ export const carQuestions = [
     { //1
         question: 'Is the 2JZ the best engine ever?',
         answers: [
-            {text: 'is that even a question', correct: true},
-            {text: 'of cuorse', correct: true},
-            {text: 'no, its the RB26', correct: false},
+            {text: 'Is that even a question', correct: true},
+            {text: 'Yes', correct: true},
+            {text: 'No, its the RB26', correct: false},
             {text: "I don't know what a 2JZ is", correct: false}
         ]
     },

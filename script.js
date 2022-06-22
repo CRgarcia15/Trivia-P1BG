@@ -1,9 +1,4 @@
 import * as myQuestions from "./questions.js"
-/* 
-make the html pages look good on styles.css 
-
-update and complete the readme page
-*/
 
 //calling all questions form question.js
 let questions
@@ -17,6 +12,7 @@ function nextQuestion () {
     }
     clearDisplay()
     showQuestion(questions[questionIndexCounter])
+    selectAnswer(questions[questionIndexCounter])
  }
 
 //listening for events when buttons are clicked
@@ -31,10 +27,10 @@ function nextQuestion () {
  document.getElementById('animals').addEventListener('click', handleClick)
  document.getElementById('random-facts').addEventListener('click', handleClick)
  //answer buttons 
- let btn1 = document.getElementById('answer1').addEventListener('click', selectAnswer)
- let btn2 = document.getElementById('answer2').addEventListener('click', selectAnswer)
- let btn3 = document.getElementById('answer3').addEventListener('click', selectAnswer)
- let btn4 = document.getElementById('answer4').addEventListener('click', selectAnswer)
+ let btn1 = document.getElementById('answer1')
+ let btn2 = document.getElementById('answer2')
+ let btn3 = document.getElementById('answer3')
+ let btn4 = document.getElementById('answer4')
 
 // topic button functions
 function handleClick(e) {
@@ -88,6 +84,7 @@ function handleClick(e) {
 
    showQuestion(questions[questionIndex])
    selectAnswer(questions[questionIndex])
+   correctWrong(questions[questionIndex])
 }
 
 //gets question display container and hides it 
@@ -121,13 +118,34 @@ function showQuestion (e) {
    questionDisplay.innerHTML = e.question
 }
 
-
-function selectAnswer (e) {
-    // change the innertext of the buttons to the corresponding answers then make the if logic for the coreect of false answer
-    //call the buttons and add the answers to them and make the logic for the background colors.
-    //selects the answer and checks for right and wrong answers
-}
-
+//clears all the html and answer buttons so that the next question can show
 function clearDisplay () {
     questionDisplay.innerHTML = " "
+    document.getElementsByClassName('answer').innerText = " "
+}
+
+//calls for buttons, assigns the corresponding answers and handels if answer correct or wrong
+function selectAnswer (e) {
+    btn1.innerText = e.answers[0].text
+    btn2.innerText = e.answers[1].text
+    btn3.innerText = e.answers[2].text
+    btn4.innerText = e.answers[3].text
+}
+
+//adding event listeners to each button
+btn1.addEventListener('click', correctWrong)
+btn2.addEventListener('click', correctWrong)
+btn3.addEventListener('click', correctWrong)
+btn4.addEventListener('click', correctWrong)
+
+//handels if the answers are correct or not
+function correctWrong (e) {
+    let correct = e.answer
+
+    if(correct == true) {
+        console.log('correct')
+    }
+    else {
+        console.log('wrong')
+    }
 }
