@@ -99,7 +99,7 @@ a:hover {
     margin-top: 20px;
 }
 
-#answer1, #answer2, #answer3, #answer4 {
+.answer {
     background-color: purple;
     color: white;
     padding: 10px;
@@ -108,7 +108,7 @@ a:hover {
     transition: 0.5s;
 }
 
-#answer1:hover, #answer2:hover, #answer3:hover, #answer4:hover {
+.answer:hover {
     background-color: white;
     color: red;
 }

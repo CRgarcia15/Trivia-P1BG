@@ -13,6 +13,7 @@ function nextQuestion () {
     clearDisplay()
     showQuestion(questions[questionIndexCounter])
     selectAnswer(questions[questionIndexCounter])
+    correctWrong()
  }
 
 //listening for events when buttons are clicked
@@ -84,7 +85,6 @@ function handleClick(e) {
 
    showQuestion(questions[questionIndex])
    selectAnswer(questions[questionIndex])
-   correctWrong(questions[questionIndex])
 }
 
 //gets question display container and hides it 
@@ -140,7 +140,7 @@ btn4.addEventListener('click', correctWrong)
 
 //handels if the answers are correct or not
 function correctWrong (e) {
-    let correct = e.answer
+    let correct = e.answers[1].correct
 
     if(correct == true) {
         console.log('correct')
