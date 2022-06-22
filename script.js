@@ -139,8 +139,9 @@ btn3.addEventListener('click', correctWrong)
 btn4.addEventListener('click', correctWrong)
 
 //handels if the answers are correct or not
+//is not working. It is not able to see if correct is true or flase
 function correctWrong (e) {
-    let correct = e.answers[1].correct
+    let correct = e.answers
 
     if(correct == true) {
         console.log('correct')
