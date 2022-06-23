@@ -141,7 +141,7 @@ btn4.addEventListener('click', correctWrong)
 
 //handels if the answers are correct or not
 function correctWrong (e) {
-   let correct = e.answers
+   let correct = e.answers.text/correct
 
     if( correct === true) {
         console.log('correct')
