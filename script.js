@@ -4,6 +4,7 @@ import * as myQuestions from "./questions.js"
 let questions
 let questionIndexCounter = 0
 let questionIndex = 0
+let correctAnswer
 
 //adds one to the question index so that next question is shown but is only limited to 11
 function nextQuestion () {
@@ -85,7 +86,6 @@ function handleClick(e) {
 
    showQuestion(questions[questionIndex])
    selectAnswer(questions[questionIndex])
-   correctWrong(questions[questionIndex])
 }
 
 //gets question display container and hides it 
@@ -131,6 +131,11 @@ function selectAnswer (e) {
     btn2.innerText = e.answers[1].text
     btn3.innerText = e.answers[2].text
     btn4.innerText = e.answers[3].text
+
+    btn1.setAttribute("correct", e.answers[0].correct)
+    btn2.setAttribute("correct", e.answers[1].correct)
+    btn3.setAttribute("correct", e.answers[2].correct)
+    btn4.setAttribute("correct", e.answers[3].correct)
 }
 
 //adding event listeners to each button
@@ -141,9 +146,9 @@ btn4.addEventListener('click', correctWrong)
 
 //handels if the answers are correct or not
 function correctWrong (e) {
-   let correct = e.answers.text.correct
+   let correct = e.srcElement.attributes["correct"].nodeValue
 
-    if( correct === true) {
+    if (correct === "true") {
         console.log('correct')
     }
     else {
