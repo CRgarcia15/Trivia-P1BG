@@ -50,42 +50,42 @@ function handleClick(e) {
             break;
 
         case "Music":
-            questions = myQuestions.carQuestions;
+            questions = myQuestions.musicQuestions;
             transitionToQuestions()
              break;
 
         case "movies":
-            questions = myQuestions.carQuestions;
+            questions = myQuestions.movieQuestions;
             transitionToQuestions()
               break;
 
         case "internet":
-            questions = myQuestions.carQuestions;
+            questions = myQuestions.internetQuestions;
             transitionToQuestions()
              break;
 
         case "sports-history":
-            questions = myQuestions.carQuestions;
+            questions = myQuestions.sportsHistoryQuestions;
             transitionToQuestions()
               break;
 
         case "food":
-             questions = myQuestions.carQuestions;
+             questions = myQuestions.foodQuestions;
             transitionToQuestions()
              break;
 
         case "countries":
-            questions = myQuestions.carQuestions;
+            questions = myQuestions.countriesQuestions;
             transitionToQuestions()
              break;
 
         case "animals":
-            questions = myQuestions.carQuestions;
+            questions = myQuestions.animalQuestions;
             transitionToQuestions()
             break;
 
         case "random-facts":
-            questions = myQuestions.carQuestions;
+            questions = myQuestions.randomFactsQuestions;
             transitionToQuestions()
              break;
 
@@ -172,5 +172,6 @@ as red and if right they show up as green. You need to figure out how to hide th
 color before the answer is choosen and after the next button is clicked. I think that
 you will need to use the clear display for the next button clicked function so that 
 the colors don't keep going.*/
+//Also figure out to change between class using JS
 
 //Also add more questions to the topics
