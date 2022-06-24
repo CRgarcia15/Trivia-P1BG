@@ -1,3 +1,4 @@
+//Car Questions
 export const carQuestions = [
     { //1
         question: "Is the 2JZ the best engine ever?",
@@ -50,7 +51,7 @@ export const carQuestions = [
         question: "How many cars compose the world's largest car collection?",
         answers: [
             {text: '1,000,000', correct: false},
-            {text: '7,00', correct: true},
+            {text: '7,000', correct: true},
             {text: '15', correct: false},
             {text: '20,000', correct: false},
         ]
@@ -86,10 +87,110 @@ export const carQuestions = [
     {//10
         question: "who said 'if you're goin' hard enough left, you'll find yourself turnin' right.'?",
         answers: [
-            {text: 'Doc hudson', correct: false},
+            {text: 'Doc hudson', correct: true},
             {text: 'Dominic Toretto', correct: false},
             {text: 'Austin Powers', correct: false},
-            {text: 'Mr. T', correct: true},
+            {text: 'Mr. T', correct: false},
+        ]
+    },
+    {//end message
+        question: 'Click More topics to continue playing'
+    }
+]
+
+//Basketball Questions
+export const basketballQuestions = [
+    { //1
+        question: "Who scored the first NBA three pointer?",
+        answers: [
+            {text: "Allen Iverson", correct: false},
+            {text: "Larry Bird", correct: false},
+            {text: "Wilt Chamberlain", correct: false},
+            {text: "Chris Ford", correct: true}
+        ]
+    },
+    { //2
+        // add picture of the car
+        question: "Who has the record for the all-time leading scorer in the NBA?",
+        answers: [
+            {text: "Stephen Curry", correct: false},
+            {text: "Michael Jordan", correct: false},
+            {text: "KAreem Abdul-Jabbar", correct: true},
+            {text: "Kobe Bryant", correct: false},
+        ]
+    },
+    { //3
+        question: "Who is the G.O.A.T (Greatest Of All Time)?",
+        answers: [
+            {text: 'LeBron James', correct: false},
+            {text: 'Larry Bird', correct: false},
+            {text: 'Magic Johnson', correct: false},
+            {text: 'Michael Jordan', correct: true},
+        ]
+    },
+    { //4
+        // add picture of the car
+        question: "What team has won the most champoinships? (There are two right answers since at the time of making this trivia game they are tied at 17 chips)",
+        answers: [
+            {text: 'Los Angeles Lakers', correct: true},
+            {text: 'Chicago Bulls', correct: false},
+            {text: 'Boston Celtics', correct: true},
+            {text: 'Miami Heat', correct: false},
+        ]
+    },
+    {//5
+        question: 'when was Basketball invented?',
+        answers: [
+            {text: 'November 1, 1946', correct: true},
+            {text: 'January 21, 1889', correct: false},
+            {text: 'Who knows', correct: false},
+            {text: 'September 12, 1968', correct: false},
+        ]
+    },
+    {//6
+        question: "Who has scored the most points in a single season game?",
+        answers: [
+            {text: 'Wilt Chamberlian', correct: true},
+            {text: 'Kobe Bryant', correct: false},
+            {text: 'leBron James', correct: false},
+            {text: 'Scottie Pippen', correct: false},
+        ]
+    },
+    {//7
+        //add a picture of the car
+        question: "Who is the tallest player ever in the NBA?",
+        answers: [
+            {text: "Shaquille O'neal", correct: false},
+            {text: 'Suleiman Ali Nashnush', correct: true},
+            {text: 'Tacko Fall', correct: false},
+            {text: 'Yao Ming', correct: false},
+        ]
+    },
+    {//8
+        question: "How many three-pointers has Shaquille O'neal made in his entire career?",
+        answers: [
+            {text: '2,500, 3-pointers', correct: false},
+            {text: '1, 3-pointer', correct: true},
+            {text: '700, 3-pointers', correct: false},
+            {text: '0, 3-pointers', correct: true},
+        ]
+    },
+    {//9
+        question: "How many championship rings does Michael Jordan have?",
+        answers: [
+            {text: '3 Rings', correct: false},
+            {text: '12 Rings', correct: false},
+            {text: '1 Ring', correct: false},
+            {text: '6 Rings', correct: true},
+        ]
+    },
+    {//10
+        question: "What player has won the most championships ever?",
+        answers: [
+            {text: 'Kobe Bryant', correct: false},
+            {text: 'Michael Jordan', correct: false},
+            {text: 'Bill Russell', correct: true},
+            {text: 'Steve Kerr', correct: false},
         ]
     },
     {//end message

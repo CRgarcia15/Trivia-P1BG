@@ -8,7 +8,7 @@ let correctAnswer
 
 //adds one to the question index so that next question is shown but is only limited to 11
 function nextQuestion () {
-    if(questionIndexCounter < 11) {
+    if(questionIndexCounter < 10) {
          questionIndexCounter++
     }
     clearDisplay()
@@ -20,7 +20,7 @@ function nextQuestion () {
 //listening for events when buttons are clicked
  document.getElementById('cars').addEventListener('click', handleClick)
  document.getElementById('basketball').addEventListener('click', handleClick)
- document.getElementById('coding').addEventListener('click', handleClick)
+ document.getElementById('music').addEventListener('click', handleClick)
  document.getElementById('movies').addEventListener('click', handleClick)
  document.getElementById('internet').addEventListener('click', handleClick)
  document.getElementById('sports-history').addEventListener('click', handleClick)
@@ -45,39 +45,48 @@ function handleClick(e) {
             break;
 
         case "basketball":
-           console.log('basketball')
+            questions = myQuestions.basketballQuestions;
+            transitionToQuestions()
             break;
 
-        case "coding":
-            console.log('coding')
+        case "Music":
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
              break;
 
         case "movies":
-            console.log('movies')
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
               break;
 
         case "internet":
-          console.log('internet')
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
              break;
 
         case "sports-history":
-            console.log('sports-history')
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
               break;
 
         case "food":
-            console.log('food')
+             questions = myQuestions.carQuestions;
+            transitionToQuestions()
              break;
 
         case "countries":
-             console.log('countries')
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
              break;
 
         case "animals":
-            console.log('animals')
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
             break;
 
         case "random-facts":
-            console.log('random-facts')
+            questions = myQuestions.carQuestions;
+            transitionToQuestions()
              break;
 
         default:
@@ -119,10 +128,12 @@ function showQuestion (e) {
    questionDisplay.innerHTML = e.question
 }
 
+let btns =  document.getElementsByClassName('answer')
 //clears all the html and answer buttons so that the next question can show
 function clearDisplay () {
     questionDisplay.innerHTML = " "
-    document.getElementsByClassName('answer').innerText = " "
+    btns.innerText = " "
+
 }
 
 //calls for buttons, assigns the corresponding answers and handels if answer correct or wrong
@@ -155,3 +166,11 @@ function correctWrong (e) {
         console.log('wrong')
     }
 }
+
+/*make a seperate class for the buttons in the HTML so that when the answers are wrong the show up
+as red and if right they show up as green. You need to figure out how to hide the 
+color before the answer is choosen and after the next button is clicked. I think that
+you will need to use the clear display for the next button clicked function so that 
+the colors don't keep going.*/
+
+//Also add more questions to the topics
