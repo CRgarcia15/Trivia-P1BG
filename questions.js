@@ -1,5 +1,5 @@
 //Car Questions
-export const carQuestions = [
+ const carQuestions = [
     { //1
         question: "Is the 2JZ the best engine ever?",
         answers: [
@@ -94,12 +94,18 @@ export const carQuestions = [
         ]
     },
     {//end message
-        question: 'Click More topics to continue playing'
+        question: 'Click More topics to continue playing',
+        answers: [
+            {text: " "},
+            {text: " "},
+            {text: " "},
+            {text: " "},
+        ]
     }
 ]
 
 //Basketball Questions
-export const basketballQuestions = [
+ const basketballQuestions = [
     { //1
         question: "Who scored the first NBA three pointer?",
         answers: [
@@ -115,7 +121,7 @@ export const basketballQuestions = [
         answers: [
             {text: "Stephen Curry", correct: false},
             {text: "Michael Jordan", correct: false},
-            {text: "KAreem Abdul-Jabbar", correct: true},
+            {text: "Kareem Abdul-Jabbar", correct: true},
             {text: "Kobe Bryant", correct: false},
         ]
     },
@@ -172,7 +178,7 @@ export const basketballQuestions = [
             {text: '2,500, 3-pointers', correct: false},
             {text: '1, 3-pointer', correct: true},
             {text: '700, 3-pointers', correct: false},
-            {text: '0, 3-pointers', correct: true},
+            {text: '0, 3-pointers', correct: false},
         ]
     },
     {//9
@@ -194,12 +200,18 @@ export const basketballQuestions = [
         ]
     },
     {//end message
-        question: 'Click More topics to continue playing'
+        question: 'Click More topics to continue playing',
+        answers: [
+            {text: " "},
+            {text: " "},
+            {text: " "},
+            {text: " "},
+        ]
     }
 ]
 
-//Music Questions
-export const musicQuestions = [
+//Music Questions 
+const musicQuestions = [
     { //1
         question: "What genre of music was most dominant in the 70s?",
         answers: [
@@ -294,8 +306,121 @@ export const musicQuestions = [
         ]
     },
     {//end message
-        question: 'Click More topics to continue playing'
+        question: 'Click More topics to continue playing',
+        answers: [
+            {text: " "},
+            {text: " "},
+            {text: " "},
+            {text: " "},
+        ]
     }
 ]
 
+//Movie Questions 
+const movieQuestions = [
+    { //1
+        question: "What year was the first movie recorded?",
+        answers: [
+            {text: "1994", correct: false},
+            {text: "2000", correct: false},
+            {text: "1888", correct: true},
+            {text: "Don't know", correct: false}
+        ]
+    },
+    { //2
+        // add picture of the car
+        question: "What movie does 'May the fourth be with you'? ",
+        answers: [
+            {text: "Star Wars", correct: true},
+            {text: "Fast and Furious", correct: false},
+            {text: "Stargate", correct: false},
+            {text: "Star Trek", correct: false},
+        ]
+    },
+    { //3
+        question: "?",
+        answers: [
+            {text: '2000s', correct: false},
+            {text: '1950s', correct: false},
+            {text: '1980s', correct: true},
+            {text: '1990s', correct: false},
+        ]
+    },
+    { //4
+        // add picture of the car
+        question: "What singer has had a Billboard No. 1 hit in each of the last four decades?",
+        answers: [
+            {text: 'Michael Jackson', correct: false},
+            {text: 'AC/DC', correct: false},
+            {text: 'Prince', correct: false},
+            {text: 'Mariah Carey', correct: true},
+        ]
+    },
+    {//5
+        question: 'Who wrote the infamous 4th Symphony?',
+        answers: [
+            {text: 'Beethoven', correct: true},
+            {text: 'Snoop Dogg', correct: false},
+            {text: 'Who knows', correct: false},
+            {text: 'Dr. Dre', correct: false},
+        ]
+    },
+    {//6
+        question: "What was Freddy Mercury's real name?",
+        answers: [
+            {text: 'Juan Rodriguez', correct: false},
+            {text: 'Farrokh Bulsara', correct: true},
+            {text: 'Freddy Mercury', correct: false},
+            {text: 'Elvis Presley', correct: false},
+        ]
+    },
+    {//7
+        //add a picture of the car
+        question: "How many Grammys does Beyoncé have?",
+        answers: [
+            {text: "23 Grammys", correct: false},
+            {text: '28 Grammys', correct: true},
+            {text: '13 Grammys', correct: false},
+            {text: '3 Grammys', correct: false},
+        ]
+    },
+    {//8
+        question: "Which band sings 'Don't Stop Believin'?",
+        answers: [
+            {text: 'Skillet', correct: false},
+            {text: 'Earth Wind and Fire', correct: false},
+            {text: 'Journey', correct: true},
+            {text: 'The Who', correct: false},
+        ]
+    },
+    {//9
+        question: "How many championship rings does Michael Jordan have?",
+        answers: [
+            {text: '3 Rings', correct: false},
+            {text: '12 Rings', correct: false},
+            {text: '1 Ring', correct: false},
+            {text: '6 Rings', correct: true},
+        ]
+    },
+    {//10
+        question: "Who wrote the infamous song 'Thriller' released on November 30, 1982?",
+        answers: [
+            {text: 'Kisst', correct: false},
+            {text: 'Michael Jackson', correct: true},
+            {text: 'The Red Hot Chilli Peppers', correct: true},
+            {text: 'Pink FLoyd', correct: false},
+        ]
+    },
+    {//end message
+        question: 'Click More topics to continue playing',
+        answers: [
+            {text: " "},
+            {text: " "},
+            {text: " "},
+            {text: " "},
+        ]
+    }
+]
+
+export {carQuestions, basketballQuestions, musicQuestions, movieQuestions}
 // make all the questions and answers here

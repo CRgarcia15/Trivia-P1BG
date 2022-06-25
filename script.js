@@ -8,7 +8,7 @@ let correctAnswer
 
 //adds one to the question index so that next question is shown but is only limited to 11
 function nextQuestion () {
-    if(questionIndexCounter < 10) {
+    if(questionIndexCounter < 11) {
          questionIndexCounter++
     }
     clearDisplay()
@@ -45,11 +45,11 @@ function handleClick(e) {
             break;
 
         case "basketball":
-            questions = myQuestions.basketballQuestions;
-            transitionToQuestions()
+           questions = myQuestions.basketballQuestions;
+           transitionToQuestions()
             break;
 
-        case "Music":
+        case "music":
             questions = myQuestions.musicQuestions;
             transitionToQuestions()
              break;
@@ -60,32 +60,32 @@ function handleClick(e) {
               break;
 
         case "internet":
-            questions = myQuestions.internetQuestions;
+            questions = myQuestions.basketballQuestions;
             transitionToQuestions()
              break;
 
         case "sports-history":
-            questions = myQuestions.sportsHistoryQuestions;
+            questions = myQuestions.basketballQuestions;
             transitionToQuestions()
               break;
 
         case "food":
-             questions = myQuestions.foodQuestions;
+            questions = myQuestions.basketballQuestions;
             transitionToQuestions()
              break;
 
         case "countries":
-            questions = myQuestions.countriesQuestions;
+            questions = myQuestions.basketballQuestions;
             transitionToQuestions()
              break;
 
         case "animals":
-            questions = myQuestions.animalQuestions;
+            questions = myQuestions.basketballQuestions;
             transitionToQuestions()
             break;
 
         case "random-facts":
-            questions = myQuestions.randomFactsQuestions;
+            questions = myQuestions.basketballQuestions;
             transitionToQuestions()
              break;
 
@@ -128,12 +128,11 @@ function showQuestion (e) {
    questionDisplay.innerHTML = e.question
 }
 
-let btns =  document.getElementsByClassName('answer')
 //clears all the html and answer buttons so that the next question can show
 function clearDisplay () {
     questionDisplay.innerHTML = " "
-    btns.innerText = " "
-
+    document.getElementsByClassName('answer').innerText = " "
+    questionDisplayContainer.style.backgroundColor = "darkgrey"
 }
 
 //calls for buttons, assigns the corresponding answers and handels if answer correct or wrong
@@ -160,18 +159,9 @@ function correctWrong (e) {
    let correct = e.srcElement.attributes["correct"].nodeValue
 
     if (correct === "true") {
-        console.log('correct')
+        questionDisplayContainer.style.backgroundColor = 'green'
     }
     else {
-        console.log('wrong')
+        questionDisplayContainer.style.backgroundColor = 'red'
     }
 }
-
-/*make a seperate class for the buttons in the HTML so that when the answers are wrong the show up
-as red and if right they show up as green. You need to figure out how to hide the 
-color before the answer is choosen and after the next button is clicked. I think that
-you will need to use the clear display for the next button clicked function so that 
-the colors don't keep going.*/
-//Also figure out to change between class using JS
-
-//Also add more questions to the topics
