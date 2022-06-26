@@ -60,32 +60,32 @@ function handleClick(e) {
               break;
 
         case "internet":
-            questions = myQuestions.basketballQuestions;
+            questions = myQuestions.internetQuestions;
             transitionToQuestions()
              break;
 
         case "sports-history":
-            questions = myQuestions.basketballQuestions;
+            questions = myQuestions.sportHistoryQuestions;
             transitionToQuestions()
               break;
 
         case "food":
-            questions = myQuestions.basketballQuestions;
+            questions = myQuestions.foodQuestions;
             transitionToQuestions()
              break;
 
         case "countries":
-            questions = myQuestions.basketballQuestions;
+            questions = myQuestions.countryQuestions;
             transitionToQuestions()
              break;
 
         case "animals":
-            questions = myQuestions.basketballQuestions;
+            questions = myQuestions.AnimalQuestions;
             transitionToQuestions()
             break;
 
         case "random-facts":
-            questions = myQuestions.basketballQuestions;
+            questions = myQuestions.randomQuestions;
             transitionToQuestions()
              break;
 
