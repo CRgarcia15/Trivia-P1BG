@@ -132,7 +132,7 @@ function showQuestion (e) {
 function clearDisplay () {
     questionDisplay.innerHTML = " "
     document.getElementsByClassName('answer').innerText = " "
-    questionDisplayContainer.style.backgroundColor = "darkgrey"
+    questionDisplayContainer.style.backgroundColor = "black"
 }
 
 //calls for buttons, assigns the corresponding answers and handels if answer correct or wrong
