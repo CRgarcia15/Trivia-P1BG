@@ -288,12 +288,12 @@ const musicQuestions = [
         ]
     },
     {//9
-        question: "How many championship rings does Michael Jordan have?",
+        question: "Which astronomer is namedropped in 'Bohemian Rhapsody'?",
         answers: [
-            {text: '3 Rings', correct: false},
-            {text: '12 Rings', correct: false},
-            {text: '1 Ring', correct: false},
-            {text: '6 Rings', correct: true},
+            {text: 'Einstein', correct: false},
+            {text: 'Newton', correct: false},
+            {text: 'Kepler', correct: false},
+            {text: 'Galileo', correct: true},
         ]
     },
     {//10

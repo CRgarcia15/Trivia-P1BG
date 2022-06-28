@@ -3,12 +3,10 @@ import * as myQuestions from "./questions.js"
 //calling all questions form question.js
 let questions
 let questionIndexCounter = 0
-let questionIndex = 0
-let correctAnswer
 
 //adds one to the question index so that next question is shown but is only limited to 11
 function nextQuestion () {
-    if(questionIndexCounter < 11) {
+    if (questionIndexCounter < 11) {
          questionIndexCounter++
     }
     clearDisplay()
@@ -93,8 +91,8 @@ function handleClick(e) {
             break;
     } 
 
-   showQuestion(questions[questionIndex])
-   selectAnswer(questions[questionIndex])
+   showQuestion(questions[questionIndexCounter])
+   selectAnswer(questions[questionIndexCounter])
 }
 
 //gets question display container and hides it 
@@ -154,12 +152,14 @@ btn2.addEventListener('click', correctWrong)
 btn3.addEventListener('click', correctWrong)
 btn4.addEventListener('click', correctWrong)
 
+
 //handels if the answers are correct or not
 function correctWrong (e) {
    let correct = e.srcElement.attributes["correct"].nodeValue
 
     if (correct === "true") {
         questionDisplayContainer.style.backgroundColor = 'green'
+        scoreCounter += 10
     }
     else {
         questionDisplayContainer.style.backgroundColor = 'red'
