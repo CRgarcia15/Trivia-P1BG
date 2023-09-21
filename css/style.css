@@ -1,5 +1,45 @@
-body .index-main {
-  background-color: black;
+body {
+  background-color: rgb(116, 128, 115);
+}
+
+.index-main div {
+  border: black solid 2px;
+  border-radius: 10px;
+}
+.index-main h1 {
+  font-family: cursive;
+  font-size: xx-large;
+  text-align: center;
+  color: beige;
+  text-shadow: 5px 3px rgb(68, 92, 66);
+  font-weight: 750;
+}
+.index-main .name {
+  text-align: center;
+  padding: 5px;
+  color: beige;
+}
+.index-main .description {
+  text-align: center;
+  color: beige;
+  font-family: cursive;
+  font-weight: 500;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+.index-main .fake-button {
+  text-align: center;
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 6px;
+  margin-left: 50%;
+  padding-bottom: 5px;
+}
+.index-main .fake-button :hover {
+  border: solid beige 2px;
+  color: rgb(252, 176, 176);
 }
 
 /*# sourceMappingURL=style.css.map */
