@@ -73,7 +73,9 @@ body {
 #topic-container .topic-button {
   background-color: rgb(116, 128, 115);
   color: beige;
-  padding: 4px;
+  padding: 15px;
+  font-weight: 700;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
