@@ -2,7 +2,7 @@ $primary-color: rgb(116, 128, 115);
 $font-type: cursive;
 $shadow-fx-color: 5px 3px rgb(68, 92, 66);
 $letter-color: beige;
-$secondary-letter-color: rgb(252, 176, 176);
+$secondary-letter-color: rgb(236, 72, 72);
 
 
 
@@ -12,7 +12,7 @@ body {
 
 .index-main {
     div {
-        border:black solid 2px;
+        border:rgb(68, 83, 62) solid 2px;
         border-radius: 10px;
     }
 
@@ -36,22 +36,31 @@ body {
         color: $letter-color;
         font-family: $font-type;
         font-weight: 500;
-        padding-bottom: 2px;
         padding-left: 5px;
         padding-right: 5px;
-        padding-bottom: 10px;
+        padding-bottom: 15px;
     }
 
     .fake-button {
         text-align: center;
         border: solid black 2px;
         border-radius: 10px;
-        padding: 6px;
-        margin-left: 50%;
+        padding: 8px;
+        margin-left: 45%;
+        text-decoration: none;
+        color: $letter-color;
+        font-family: $font-type;
+        font-weight: 500;
+        margin-bottom: 15px;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
     }
 
-    .fake-button :hover {
-        border: solid beige 2px;
-        color: $secondary-letter-color;
+    .fake-button:hover {
+        font-weight: 600;
+        color: rgb(196, 192, 192);
+        border: rgb(44, 43, 43) solid 2px;
+        box-shadow: 4px 2px rgb(75, 75, 7);
     }
 }
