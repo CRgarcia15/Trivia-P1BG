@@ -50,4 +50,30 @@ body {
   box-shadow: 4px 2px rgb(75, 75, 7);
 }
 
+.topic-h1 {
+  text-align: center;
+  color: beige;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+#topic-container {
+  border: black solid 2px;
+  border-radius: 10px;
+  max-width: 100%;
+  background-color: #bbb9b9;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin: 20px 0;
+  text-align: center;
+}
+#topic-container .topic-button {
+  background-color: rgb(116, 128, 115);
+  color: beige;
+  padding: 4px;
+}
+
 /*# sourceMappingURL=style.css.map */
