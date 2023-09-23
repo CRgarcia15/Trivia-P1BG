@@ -11,7 +11,7 @@ body {
   font-size: xx-large;
   text-align: center;
   color: beige;
-  text-shadow: 5px 3px rgb(68, 92, 66);
+  text-shadow: 0 0 10px 2px;
   font-weight: 750;
 }
 .index-main .name {
@@ -45,9 +45,9 @@ body {
 }
 .index-main .fake-button:hover {
   font-weight: 600;
-  color: rgb(196, 192, 192);
+  color: hsl(60, 100%, 94%);
   border: rgb(44, 43, 43) solid 2px;
-  box-shadow: 4px 2px rgb(75, 75, 7);
+  box-shadow: 0 0 10px 2px;
 }
 
 .topic-h1 {
@@ -84,8 +84,8 @@ body {
 
 #question-container {
   border: black solid 2px;
-  box-shadow: 5px 3px darkgrey;
-  border-radius: 10px;
+  box-shadow: 0 0 10px 2px;
+  border-radius: 4px;
 }
 #question-container .question-header {
   text-align: center;

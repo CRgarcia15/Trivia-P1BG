@@ -6,15 +6,16 @@ $font-weight-light: 500;
 $font-weight-medium: 600;
 $font-weight-heavy: 750;
 
-$shadow-fx-color-version-1: 5px 3px rgb(68, 92, 66);
-$shadow-fx-color-version-2: 5px 3px darkgrey;
+$shadow-fx-color-version-1: 0 0 10px 2px;
+$shadow-fx-color-version-2: 6px 6px rgba(63, 63, 63, 0.350), -6px -6px rgba(63, 63, 63, 0.350);
 
 $letter-color: beige;
 $secondary-letter-color: hsl(60, 100%, 94%);
 $third-letter-color: rgb(68, 92, 66);
 
-$btn-round-edge: 5px;
-$radius-border: 10px;
+$radius-border-soft: 4px;
+$radius-border-mid: 5px;
+$radius-border-strong: 10px;
 
 $bottom-border: darkslategray solid 3px;
 
@@ -70,13 +71,12 @@ body {
         -webkit-appearance: button;
         -moz-appearance: button;
         appearance: button;
-    }
-
-    .fake-button:hover {
+        &:hover {
         font-weight: $font-weight-medium;
-        color: rgb(196, 192, 192);
+        color:$secondary-letter-color;
         border: rgb(44, 43, 43) solid 2px;
-        box-shadow: 4px 2px rgb(75, 75, 7);
+        box-shadow: $shadow-fx-color-version-1;
+        }
     }
 }
 
@@ -106,7 +106,7 @@ body {
         color: $letter-color;
         padding: 15px;
         font-weight: $font-weight-heavy;
-        border-radius: $btn-round-edge;
+        border-radius: $radius-border-mid;
             &:hover {
                 color: $third-letter-color;
                 background-color: $secondary-color;
@@ -117,8 +117,8 @@ body {
 //QUESTIONS IN QUESTION.HTML
 #question-container {
     border: black solid 2px;
-    box-shadow: $shadow-fx-color-version-2;
-    border-radius: $radius-border;
+    box-shadow: $shadow-fx-color-version-1;
+    border-radius: $radius-border-soft;
 
     .question-header {
         text-align: center;
@@ -128,4 +128,6 @@ body {
         border-bottom: $bottom-border;
         margin-bottom: 5px;
     }
+
+    
 }
