@@ -130,7 +130,7 @@ function showQuestion (e) {
 function clearDisplay () {
     questionDisplay.innerHTML = " "
     document.getElementsByClassName('answer').innerText = " "
-    questionDisplayContainer.style.backgroundColor = "black"
+    questionDisplayContainer.style.backgroundColor = "transparent"
 }
 
 //calls for buttons, assigns the corresponding answers and handels if answer correct or wrong
@@ -159,9 +159,10 @@ function correctWrong (e) {
 
     if (correct === "true") {
         questionDisplayContainer.style.backgroundColor = 'green'
-        scoreCounter += 10
+        return
     }
     else {
         questionDisplayContainer.style.backgroundColor = 'red'
+        return
     }
 }

@@ -17,9 +17,10 @@ $radius-border-soft: 4px;
 $radius-border-mid: 5px;
 $radius-border-strong: 10px;
 
-$bottom-border: darkslategray solid 3px;
+$bottom-border: gainsboro solid 3px;
 
-
+$hover-BG-color-next: rgb(8, 99, 8);
+$hover-BG-color-return: rgb(175, 9, 9);
 
 body {
     background-color: $primary-color;
@@ -71,6 +72,7 @@ body {
         -webkit-appearance: button;
         -moz-appearance: button;
         appearance: button;
+        transition: 1s;
         &:hover {
         font-weight: $font-weight-medium;
         color:$secondary-letter-color;
@@ -104,9 +106,12 @@ body {
     .topic-button {
         background-color: $primary-color;
         color: $letter-color;
-        padding: 15px;
+        padding: 20px;
+        margin: 1px;
         font-weight: $font-weight-heavy;
+        font-size: 800;
         border-radius: $radius-border-mid;
+        transition: 1s;
             &:hover {
                 color: $third-letter-color;
                 background-color: $secondary-color;
@@ -129,5 +134,65 @@ body {
         margin-bottom: 5px;
     }
 
-    
+    #questionsDis {
+        background-color: gainsboro;
+        text-align: center;
+        padding: 15px;
+        border: solid 3px $letter-color;
+        border-radius: 8px;
+        font-family: $font-type;
+    }
+
+    .container {
+        background-color: $primary-color;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .answer {
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        font-family: $font-type;
+        font-weight: $font-weight-medium;
+        transition: 0.5s;
+            &:hover {
+                background-color: $primary-color;
+                color: $letter-color;
+                border-color: $letter-color;
+                box-shadow: $shadow-fx-color-version-1;
+            }
+    }
+
+    #next {
+        border-radius: 10px;
+        padding: 10px;
+        margin-right: 5px;
+        font-family: $font-type;
+        font-weight: $font-weight-medium;
+        transition: 1.5s;
+            &:hover {
+                background-color: $hover-BG-color-next;
+                color: $letter-color;
+                border-color: $letter-color;
+                box-shadow: $shadow-fx-color-version-1;
+            }
+    }
+
+    #return {
+        border-radius: 10px;
+        padding: 10px;
+        margin-left: 5px;
+        font-family: $font-type;
+        font-weight: $font-weight-medium;
+        transition: 2s;
+            &:hover {
+                background-color: $hover-BG-color-return;
+                color: $letter-color;
+                border-color: $letter-color;
+                box-shadow: $shadow-fx-color-version-1;
+            }
+    }
 }
