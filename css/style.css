@@ -74,8 +74,26 @@ body {
   background-color: rgb(116, 128, 115);
   color: beige;
   padding: 15px;
-  font-weight: 700;
+  font-weight: 750;
+  border-radius: 5px;
+}
+#topic-container .topic-button:hover {
+  color: rgb(68, 92, 66);
+  background-color: hsl(60, 100%, 94%);
+}
+
+#question-container {
+  border: black solid 2px;
+  box-shadow: 5px 3px darkgrey;
   border-radius: 10px;
+}
+#question-container .question-header {
+  text-align: center;
+  color: beige;
+  font-family: cursive;
+  font-weight: 500;
+  border-bottom: darkslategray solid 3px;
+  margin-bottom: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */
