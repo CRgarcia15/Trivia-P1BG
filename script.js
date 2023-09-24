@@ -14,7 +14,7 @@ function nextQuestion () {
     selectAnswer(questions[questionIndexCounter])
     correctWrong()
  }
-
+ 
 //listening for events when buttons are clicked
  document.getElementById('cars').addEventListener('click', handleClick)
  document.getElementById('basketball').addEventListener('click', handleClick)
