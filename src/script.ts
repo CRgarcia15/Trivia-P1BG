@@ -5,14 +5,14 @@ let questions: any
 let questionIndexCounter: number = 0
 
 //adds one to the question index so that next question is shown but is only limited to 11
-function nextQuestion (e: Event): void {
+function nextQuestion (): void {
     if (questionIndexCounter < 11) {
          questionIndexCounter++
     }
     clearDisplay()
     showQuestion(questions[questionIndexCounter])
     selectAnswer(questions[questionIndexCounter])
-    correctWrong(e)
+    correctWrong()
  }
  
 //listening for events when buttons are clicked
@@ -130,7 +130,11 @@ function showQuestion (e: any): void {
 //clears all the html and answer buttons so that the next question can show
 function clearDisplay (): void {
     questionDisplay.innerHTML = " "
-   document.getElementsByClassName('answer')!.innerText = " "
+    let ansBtn: any = document.getElementsByClassName('answer')!
+        for (let i: number = 0; ansBtn.length < 4; i++) {
+            let btn = ansBtn[i];
+            btn.innerHTML = " "
+        }
     questionDisplayContainer.style.backgroundColor = "black"
 }
 

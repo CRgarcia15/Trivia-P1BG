@@ -28,14 +28,13 @@ const myQuestions = __importStar(require("./questions.js"));
 let questions;
 let questionIndexCounter = 0;
 //adds one to the question index so that next question is shown but is only limited to 11
-function nextQuestion(e) {
+function nextQuestion() {
     if (questionIndexCounter < 11) {
         questionIndexCounter++;
     }
     clearDisplay();
     showQuestion(questions[questionIndexCounter]);
-    selectAnswer(questions[questionIndexCounter]);
-    correctWrong(e);
+    correctWrong(selectAnswer(questions[questionIndexCounter]));
 }
 //listening for events when buttons are clicked
 document.getElementById('cars').addEventListener('click', handleClick);
@@ -129,7 +128,11 @@ function showQuestion(e) {
 //clears all the html and answer buttons so that the next question can show
 function clearDisplay() {
     questionDisplay.innerHTML = " ";
-    // document.getElementsByClassName('answer')!.innerText = " "
+    let ansBtn = document.getElementsByClassName('answer');
+    for (let i = 0; ansBtn.length < 4; i++) {
+        let btn = ansBtn[i];
+        btn.innerHTML = " ";
+    }
     questionDisplayContainer.style.backgroundColor = "black";
 }
 //calls for buttons, assigns the corresponding answers and handels if answer correct or wrong
