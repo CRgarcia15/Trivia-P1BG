@@ -9,3 +9,5 @@ TECHNOLOGIESV - This application was originally built on Javascript, HTML5 and c
 TECHNICAL INFORMATION - This application requires no set up. This application relies heavily on logic to manipulate the DOM as you may see in script.js or script.ts. If contribution to this application is desired be mindful of the logic that manipulate the DOM since there a lot of moving parts relating to it.
 
 ISSUES - currently the application runs smoothly and more efficient. parts of logic were re-structured for efficiency purposes.Currently there is a problem with when a answer is selected and the background changes to its prespective color (right=green wrong=red) and the user decides to return to topics menu, once the user chooses its next set of questions the background color on the question display keeps the last background color it was left with.
+
+API DOCUMENTATION - N/a
