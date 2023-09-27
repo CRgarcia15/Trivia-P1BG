@@ -5,14 +5,14 @@ let questions: any
 let questionIndexCounter: number = 0
 
 //adds one to the question index so that next question is shown but is only limited to 11
-function nextQuestion (): void {
+function nextQuestion (e: any): void {
     if (questionIndexCounter < 11) {
          questionIndexCounter++
     }
     clearDisplay()
     showQuestion(questions[questionIndexCounter])
     selectAnswer(questions[questionIndexCounter])
-    correctWrong()
+    correctWrong(e)
  }
  
 //listening for events when buttons are clicked
